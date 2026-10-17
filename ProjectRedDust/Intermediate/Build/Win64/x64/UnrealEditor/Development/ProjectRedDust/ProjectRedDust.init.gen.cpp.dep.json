@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\lenovo\\documents\\github\\projectreddust\\projectreddust\\intermediate\\build\\win64\\unrealeditor\\inc\\projectreddust\\uht\\projectreddust.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\lenovo\\documents\\github\\projectreddust\\projectreddust\\intermediate\\build\\win64\\x64\\projectreddusteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\lenovo\\documents\\github\\projectreddust\\projectreddust\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\projectreddust\\definitions.projectreddust.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
