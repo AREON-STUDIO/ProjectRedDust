@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ProjectRedDust",
+			"Path": "..\\Source\\ProjectRedDust.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ProjectRedDustEditor",
+			"Path": "..\\Source\\ProjectRedDustEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
