@@ -252,6 +252,7 @@
     <None Include="..\..\ProjectRedDust.uproject"/>
     <None Include="..\..\Source\ProjectRedDust.Target.cs"/>
     <None Include="..\..\Source\ProjectRedDustEditor.Target.cs"/>
+    <None Include="..\..\.vsconfig"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>
@@ -278,6 +279,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\ProjectRedDust\ProjectRedDustProjectile.h"/>
+    <ClCompile Include="..\..\Source\ProjectRedDust\Survival_System.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ProjectRedDust\Survival_System.h"/>
     <ClCompile Include="..\..\Source\ProjectRedDust\TP_PickUpComponent.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
