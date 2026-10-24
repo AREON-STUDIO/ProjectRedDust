@@ -61,7 +61,14 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Survival")
 	bool IsGeneratingPower;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Survival")
+	bool Eating;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Survival")
+	bool Drinking;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Survival")
+	bool IsHealing;
 
 	//These Functions will be used to modify the stats. Warning to touch them if you don't know what your doing.
 	UFUNCTION(BlueprintCallable, Category = "Survival")
@@ -69,6 +76,15 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Survival")
 	void ModifyPower( bool UsePower, bool GeneratePower, float Amount);
+
+	UFUNCTION(BlueprintCallable, Category = "Survival")
+	void ModifyHunger(float Amount,bool IsEating);
+
+	UFUNCTION(BlueprintCallable, Category = "Survival")
+	void ModifyThirst(float Amount,bool IsDrinking);
+
+	UFUNCTION(BlueprintCallable, Category = "Survival")
+	void ModifyHealth(float Amount,bool Heal);
 
 	// These are delegates that will be used to broadcast the changes in the stats. You can bind them to any function you want.
 	UPROPERTY(BlueprintAssignable, Category = "Survival")
