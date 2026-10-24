@@ -76,3 +76,67 @@ void USurvival_System::ModifyPower( bool UsePower,bool GeneratePower, float Amou
 		OnPowerChanged.Broadcast(Power);
 	}
 }
+
+void USurvival_System::ModifyHunger(float Amount, bool IsEating)
+{
+	if(IsEating)
+	{
+		Hunger += Amount;
+		if(Hunger > 100)
+		{
+			Hunger = 100;
+		}
+		OnHungerChanged.Broadcast(Hunger);
+	}
+	else
+	{
+		Hunger -= Amount;
+		if(Hunger < 0)
+		{
+			Hunger = 0;
+		}
+		OnHungerChanged.Broadcast(Hunger);
+	}
+}
+
+void USurvival_System::ModifyThirst(float Amount, bool IsDrinking) 
+{
+	if(IsDrinking)
+	{
+		Thirst += Amount;
+		if(Thirst > 100)
+		{
+			Thirst = 100;
+		}
+		OnThirstChanged.Broadcast(Thirst);
+	}
+	else
+	{
+		Thirst -= Amount;
+		if(Thirst < 0)
+		{
+			Thirst = 0;
+		}
+		OnThirstChanged.Broadcast(Thirst);
+	}
+}
+
+void USurvival_System::ModifyHealth(float Amount,bool Heal) {
+	if(Heal)
+	{
+		Health += Amount;
+	}
+	else
+	{
+		Health -= Amount;
+	}
+	if(Health > 100)
+	{
+		Health = 100;
+	}
+	else if(Health < 0)
+	{
+		Health = 0;
+	}
+	OnHealthChanged.Broadcast(Health);
+}
